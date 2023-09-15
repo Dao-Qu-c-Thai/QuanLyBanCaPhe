@@ -13,7 +13,7 @@ THÀNH VIÊN:
 ## Chức Năng
 
 #### WinForm: 
-- Thêm, xóa, sửa thông tin nhân viên
+- Quản lý thông tin nhân viên
 - Oder cà phê theo yêu cầu 
 - Thanh toán 
 - Quản lý tài khoản nhân viên
