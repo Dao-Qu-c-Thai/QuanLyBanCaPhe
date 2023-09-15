@@ -18,4 +18,4 @@ THÀNH VIÊN:
 - Thanh toán 
 - Quản lý tài khoản nhân viên
 - Phân quyền quản lý và nhân viên
-#### AI: Xếp lịch làm việc
+#### AI: Xếp lịch làm việc cho nhân viên
