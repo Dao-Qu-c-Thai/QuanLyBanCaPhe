@@ -18,4 +18,8 @@ THÀNH VIÊN:
 - Thanh toán 
 - Quản lý tài khoản nhân viên
 - Phân quyền quản lý và nhân viên
+#### Web:
+- Đăng nhập tài khoản
+- Danh sách món ăn
+- Đặt hàng 
 #### AI: Xếp lịch làm việc cho nhân viên
