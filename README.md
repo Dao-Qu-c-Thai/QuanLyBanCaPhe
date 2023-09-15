@@ -6,12 +6,12 @@ THÀNH VIÊN:
 
 | Tên Thành Viên | MSSV | Vai Trò |
 | ------ | ------ |---|
-| Nguyễn Thị Bích Phượn |2000|Nhómt trưởng|
+| Nguyễn Thị Bích Phượng |2000|Nhómt trưởng|
 | Nguyễn Thị Kim Dung|2001207041 |Thành viên|
 | Đào Quốc Thái | 2001200045 |Thành viên|
 
 ## Chức Năng
-----
+
 #### WinForm: 
 - Thêm, xóa, sửa thông tin nhân viên
 - Oder cà phê theo yêu cầu 
