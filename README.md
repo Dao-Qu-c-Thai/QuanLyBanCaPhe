@@ -20,6 +20,5 @@ THÀNH VIÊN:
 - Phân quyền quản lý và nhân viên
 #### Web:
 - Đăng nhập tài khoản
-- Danh sách món ăn
-- Đặt hàng 
+- Danh sách sản phẩm
 #### AI: Xếp lịch làm việc cho nhân viên
