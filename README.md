@@ -6,7 +6,7 @@ THÀNH VIÊN:
 
 | Tên Thành Viên | MSSV | Vai Trò |
 | ------ | ------ |---|
-| Nguyễn Thị Bích Phượng |2000|Nhómt trưởng|
+| Nguyễn Thị Bích Phượng |2000|Nhóm trưởng|
 | Nguyễn Thị Kim Dung|2001207041 |Thành viên|
 | Đào Quốc Thái | 2001200045 |Thành viên|
 
