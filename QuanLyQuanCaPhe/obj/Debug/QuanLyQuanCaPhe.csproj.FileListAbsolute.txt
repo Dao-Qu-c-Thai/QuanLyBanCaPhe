@@ -1,0 +1,12 @@
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\bin\Debug\QUanLyQuanCaPhe.exe.config
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\bin\Debug\QUanLyQuanCaPhe.exe
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\bin\Debug\QUanLyQuanCaPhe.pdb
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QuanLyQuanCaPhe.csproj.AssemblyReference.cache
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QuanLyQuanCaPhe.csproj.SuggestedBindingRedirects.cache
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.GUI.frmLogin.resources
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.frmNhanVien.resources
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.Properties.Resources.resources
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QuanLyQuanCaPhe.csproj.GenerateResource.cache
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QuanLyQuanCaPhe.csproj.CoreCompileInputs.cache
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.exe
+D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.pdb
