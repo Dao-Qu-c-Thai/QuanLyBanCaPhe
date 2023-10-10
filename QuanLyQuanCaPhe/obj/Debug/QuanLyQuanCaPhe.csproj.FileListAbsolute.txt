@@ -10,3 +10,6 @@ D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QuanLyQua
 D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QuanLyQuanCaPhe.csproj.CoreCompileInputs.cache
 D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.exe
 D:\PhatTrienUngDungThongMinh\QuanLyQuanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.pdb
+E:\GITHUB\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\QUanLyQuanCaPhe.exe.config
+E:\GITHUB\QuanLyBanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.exe
+E:\GITHUB\QuanLyBanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.pdb
