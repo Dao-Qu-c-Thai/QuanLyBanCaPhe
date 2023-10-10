@@ -32,9 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_thoat = new System.Windows.Forms.Button();
-            this.btn_load = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_danhmuc = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -59,12 +56,9 @@
             this.label13 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.btn_search = new System.Windows.Forms.Button();
             this.txt_search = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -82,6 +76,12 @@
             this.panel20 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.btn_thoat = new System.Windows.Forms.Button();
+            this.btn_load = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.txt_KhongTheNhap1 = new ThuVienControls.txt_KhongTheNhap();
+            this.txt_KhongTheNhap2 = new ThuVienControls.txt_KhongTheNhap();
             this.pan_tacvu.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -149,33 +149,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(191, 85);
             this.panel2.TabIndex = 0;
-            // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Image = global::QUanLyQuanCaPhe.Properties.Resources.x1;
-            this.btn_thoat.Location = new System.Drawing.Point(136, 21);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(52, 51);
-            this.btn_thoat.TabIndex = 60;
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            // 
-            // btn_load
-            // 
-            this.btn_load.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_load2;
-            this.btn_load.Location = new System.Drawing.Point(71, 21);
-            this.btn_load.Name = "btn_load";
-            this.btn_load.Size = new System.Drawing.Size(54, 51);
-            this.btn_load.TabIndex = 60;
-            this.btn_load.UseVisualStyleBackColor = true;
-            // 
-            // btn_back
-            // 
-            this.btn_back.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_back;
-            this.btn_back.Location = new System.Drawing.Point(7, 21);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(56, 51);
-            this.btn_back.TabIndex = 0;
-            this.btn_back.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -343,6 +316,7 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.txt_KhongTheNhap2);
             this.panel10.Controls.Add(this.button4);
             this.panel10.Controls.Add(this.button3);
             this.panel10.Controls.Add(this.button2);
@@ -351,7 +325,6 @@
             this.panel10.Controls.Add(this.label9);
             this.panel10.Controls.Add(this.comboBox1);
             this.panel10.Controls.Add(this.label8);
-            this.panel10.Controls.Add(this.textBox2);
             this.panel10.Controls.Add(this.label7);
             this.panel10.Controls.Add(this.dataGridView1);
             this.panel10.Location = new System.Drawing.Point(11, 20);
@@ -416,15 +389,6 @@
             this.panel17.Size = new System.Drawing.Size(562, 71);
             this.panel17.TabIndex = 0;
             // 
-            // btn_search
-            // 
-            this.btn_search.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_search1;
-            this.btn_search.Location = new System.Drawing.Point(499, 8);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(49, 50);
-            this.btn_search.TabIndex = 1;
-            this.btn_search.UseVisualStyleBackColor = true;
-            // 
             // txt_search
             // 
             this.txt_search.Location = new System.Drawing.Point(25, 22);
@@ -436,18 +400,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(610, 29);
+            this.label6.Location = new System.Drawing.Point(607, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(152, 26);
             this.label6.TabIndex = 81;
             this.label6.Text = "Mã nhân viên";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(633, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 82;
             // 
             // label7
             // 
@@ -458,13 +415,6 @@
             this.label7.Size = new System.Drawing.Size(104, 22);
             this.label7.TabIndex = 1;
             this.label7.Text = "Mã hóa đơn";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(124, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 2;
             // 
             // label8
             // 
@@ -623,16 +573,68 @@
             this.button5.Text = "Thanh toán";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // btn_search
+            // 
+            this.btn_search.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_search1;
+            this.btn_search.Location = new System.Drawing.Point(499, 8);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(49, 50);
+            this.btn_search.TabIndex = 1;
+            this.btn_search.UseVisualStyleBackColor = true;
+            // 
+            // btn_thoat
+            // 
+            this.btn_thoat.Image = global::QUanLyQuanCaPhe.Properties.Resources.x1;
+            this.btn_thoat.Location = new System.Drawing.Point(136, 21);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(52, 51);
+            this.btn_thoat.TabIndex = 60;
+            this.btn_thoat.UseVisualStyleBackColor = true;
+            // 
+            // btn_load
+            // 
+            this.btn_load.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_load2;
+            this.btn_load.Location = new System.Drawing.Point(71, 21);
+            this.btn_load.Name = "btn_load";
+            this.btn_load.Size = new System.Drawing.Size(54, 51);
+            this.btn_load.TabIndex = 60;
+            this.btn_load.UseVisualStyleBackColor = true;
+            // 
+            // btn_back
+            // 
+            this.btn_back.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_back;
+            this.btn_back.Location = new System.Drawing.Point(7, 21);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(56, 51);
+            this.btn_back.TabIndex = 0;
+            this.btn_back.UseVisualStyleBackColor = true;
+            // 
+            // txt_KhongTheNhap1
+            // 
+            this.txt_KhongTheNhap1.Enabled = false;
+            this.txt_KhongTheNhap1.Location = new System.Drawing.Point(630, 66);
+            this.txt_KhongTheNhap1.Name = "txt_KhongTheNhap1";
+            this.txt_KhongTheNhap1.Size = new System.Drawing.Size(100, 22);
+            this.txt_KhongTheNhap1.TabIndex = 87;
+            // 
+            // txt_KhongTheNhap2
+            // 
+            this.txt_KhongTheNhap2.Enabled = false;
+            this.txt_KhongTheNhap2.Location = new System.Drawing.Point(124, 18);
+            this.txt_KhongTheNhap2.Name = "txt_KhongTheNhap2";
+            this.txt_KhongTheNhap2.Size = new System.Drawing.Size(100, 22);
+            this.txt_KhongTheNhap2.TabIndex = 11;
+            // 
             // frmOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1368, 789);
+            this.Controls.Add(this.txt_KhongTheNhap1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel9);
@@ -724,10 +726,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Panel panel18;
@@ -736,5 +736,7 @@
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button5;
+        private ThuVienControls.txt_KhongTheNhap txt_KhongTheNhap2;
+        private ThuVienControls.txt_KhongTheNhap txt_KhongTheNhap1;
     }
 }

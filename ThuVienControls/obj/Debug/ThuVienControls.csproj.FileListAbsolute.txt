@@ -1,0 +1,5 @@
+E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\bin\Debug\ThuVienControls.dll
+E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\bin\Debug\ThuVienControls.pdb
+E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.csprojResolveAssemblyReference.cache
+E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.dll
+E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.pdb
