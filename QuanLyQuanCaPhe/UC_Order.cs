@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QUanLyQuanCaPhe.GUI
+namespace QUanLyQuanCaPhe
 {
-    public partial class frmOrder : Form
+    public partial class UC_Order : UserControl
     {
-        public frmOrder()
+        public UC_Order()
         {
             InitializeComponent();
-        }
-
-        private void pan_tacvu_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
