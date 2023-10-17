@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyQuanCaPhe", "QUanLyQuanCaPhe\QuanLyQuanCaPhe.csproj", "{A73D3D95-59DA-4712-A4F1-F8A05E2052A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThuVienControls", "ThuVienControls\ThuVienControls.csproj", "{B84F72F7-518B-4A44-8088-D3F9CCCD7A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{803BD74F-CA93-4E93-B0FC-FB58FB66CF79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{0E56E765-DFAD-4FE8-8E28-E5C2E42FA102}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +25,14 @@ Global
 		{B84F72F7-518B-4A44-8088-D3F9CCCD7A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B84F72F7-518B-4A44-8088-D3F9CCCD7A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B84F72F7-518B-4A44-8088-D3F9CCCD7A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803BD74F-CA93-4E93-B0FC-FB58FB66CF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803BD74F-CA93-4E93-B0FC-FB58FB66CF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803BD74F-CA93-4E93-B0FC-FB58FB66CF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803BD74F-CA93-4E93-B0FC-FB58FB66CF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E56E765-DFAD-4FE8-8E28-E5C2E42FA102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E56E765-DFAD-4FE8-8E28-E5C2E42FA102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E56E765-DFAD-4FE8-8E28-E5C2E42FA102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E56E765-DFAD-4FE8-8E28-E5C2E42FA102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,3 +3,9 @@ E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\bin\Debug\ThuVienControls.pdb
 E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.csprojResolveAssemblyReference.cache
 E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.dll
 E:\GITHUB\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.pdb
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\ThuVienControls\bin\Debug\ThuVienControls.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\ThuVienControls\bin\Debug\ThuVienControls.pdb
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.csproj.AssemblyReference.cache
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.csproj.CoreCompileInputs.cache
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\ThuVienControls\obj\Debug\ThuVienControls.pdb

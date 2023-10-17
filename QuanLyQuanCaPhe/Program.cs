@@ -9,6 +9,8 @@ namespace QUanLyQuanCaPhe
 {
     internal static class Program
     {
+        public static frmMain mainFrm = null;
+        public static frmLogin loginFrm = null;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -17,7 +19,8 @@ namespace QUanLyQuanCaPhe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmThemKhachHang());
+            loginFrm = new frmLogin();
+            Application.Run(loginFrm);
         }
     }
 }

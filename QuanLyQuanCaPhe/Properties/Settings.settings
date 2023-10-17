@@ -1,7 +1,9 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="QUanLyQuanCaPhe.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="cnn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=LAPTOP-V5LU7RSO\MSSQLSERVER01;Initial Catalog=QUANLYCAPHE1;User ID=sa;Password=***********</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>
