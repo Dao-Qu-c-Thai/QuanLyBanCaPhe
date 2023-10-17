@@ -1,0 +1,12 @@
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\bin\Debug\net7.0\BLL.deps.json
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\bin\Debug\net7.0\BLL.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\bin\Debug\net7.0\BLL.pdb
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\BLL.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\refint\BLL.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\BLL.pdb
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\BLL\obj\Debug\net7.0\ref\BLL.dll

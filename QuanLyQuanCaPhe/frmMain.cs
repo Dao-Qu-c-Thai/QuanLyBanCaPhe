@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QUanLyQuanCaPhe.GUI
+namespace QUanLyQuanCaPhe
 {
     public partial class frmMain : Form
     {
