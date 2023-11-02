@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QUANLYCAPHE1" Class="QUANLYCAPHE1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-V5LU7RSO\MSSQLSERVER01;Initial Catalog=QUANLYCAPHE1;User ID=sa" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QUANLYCAPHE1ConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BAN" Member="BANs">
     <Type Name="BAN">
       <Column Name="MABAN" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -115,8 +114,8 @@
   </Table>
   <Table Name="dbo.QL_NguoiDungNhomNguoiDung" Member="QL_NguoiDungNhomNguoiDungs">
     <Type Name="QL_NguoiDungNhomNguoiDung">
-      <Column Name="TenDangNhap" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MaNhomNguoiDung" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TenDangNhap" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaNhomNguoiDung" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="GhiChu" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
     </Type>
   </Table>

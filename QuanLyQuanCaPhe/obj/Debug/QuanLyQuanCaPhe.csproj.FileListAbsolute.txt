@@ -37,7 +37,6 @@ D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\obj\Debug\QuanLyQuan
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\QUanLyQuanCaPhe.exe.config
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\QUanLyQuanCaPhe.exe
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\QUanLyQuanCaPhe.pdb
-D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\DAL.dll
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\ThuVienControls.dll
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\DAL.pdb
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\DAL.dll.config
@@ -54,3 +53,4 @@ D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuan
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.frmManHinh.resources
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.frmThemNguoIDungVaoNhom.resources
 D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\obj\Debug\QUanLyQuanCaPhe.frmPhanQuyen.resources
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\QUanLyQuanCaPhe\bin\Debug\DAL.dll

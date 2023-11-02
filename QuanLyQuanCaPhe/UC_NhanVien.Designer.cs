@@ -362,6 +362,7 @@
             this.btn_load.Size = new System.Drawing.Size(54, 51);
             this.btn_load.TabIndex = 60;
             this.btn_load.UseVisualStyleBackColor = true;
+            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
             // 
             // btn_back
             // 
@@ -390,6 +391,7 @@
             this.btn_search.Size = new System.Drawing.Size(49, 50);
             this.btn_search.TabIndex = 1;
             this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // txt_search
             // 
@@ -475,6 +477,7 @@
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -487,6 +490,7 @@
             this.btn_sua.Text = "Sửa";
             this.btn_sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -499,6 +503,7 @@
             this.btn_them.Text = "Thêm";
             this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // label14
             // 
@@ -560,6 +565,7 @@
             // 
             // data_dsnv
             // 
+            this.data_dsnv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.data_dsnv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_dsnv.Location = new System.Drawing.Point(4, 8);
             this.data_dsnv.Name = "data_dsnv";

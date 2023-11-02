@@ -13,7 +13,7 @@ namespace QUanLyQuanCaPhe
 {
     public partial class UC_NhanVien : UserControl
     {
-        NhanVien_DAL nv = new NhanVien_DAL();
+        NhanVien_DAL dal = new NhanVien_DAL();
         public UC_NhanVien()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace QUanLyQuanCaPhe
         }
         public void getData()
         {
-            data_dsnv.DataSource = nv.getData();
+            data_dsnv.DataSource = dal.getData();
         }
 
         private void panel11_Paint(object sender, PaintEventArgs e)
@@ -63,6 +63,103 @@ namespace QUanLyQuanCaPhe
         private void chk_nu_CheckedChanged(object sender, EventArgs e)
         {
             chk_nam.Checked = false;
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            NHANVIEN nv = new NHANVIEN();
+            nv.TENNV = txt_hoten.Text;
+            data_dsnv.DataSource = dal.searchNV(nv);
+        }
+
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            getData();
+        }
+
+        private void btn_them_Click(object sender, EventArgs e)
+        {
+            NHANVIEN nv = new NHANVIEN();
+            nv.MANV = int.Parse(txt_manv.Text);
+            nv.TENNV=txt_hoten.Text;
+            nv.DIACHI=txt_diachi.Text;
+            nv.SDT=txt_sdt.Text;
+            nv.CHUCVU=txt_chucvu.Text;
+            nv.NgayVaoLam= DateTime.Parse(txt_ngayvaolam.Text);
+            nv.TenDangNhap = txt_user.Text;
+
+            if (chk_nam.Checked == true)
+            {
+                nv.GIOITINH = "NAM";
+            }
+            else if (chk_nu.Checked == true)
+            {
+                nv.GIOITINH = "NỮ";
+            }
+            try
+            {
+                dal.themNhanVien(nv);
+                MessageBox.Show("Thêm nhân viên thành công!!!");
+                getData();
+            }
+            catch
+            {
+                MessageBox.Show("Thêm nhân viên thất bại!!!");
+            }
+            
+        }
+
+        private void btn_xoa_Click(object sender, EventArgs e)
+        {
+            NHANVIEN nv = new NHANVIEN();
+            nv.MANV = int.Parse(txt_manv.Text);
+            if(MessageBox.Show("Bạn có muốn xóa nhân viên này không???","Cảnh báo",
+                MessageBoxButtons.YesNo,MessageBoxIcon.Question,MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                dal.deleteNhanVien(nv);
+                MessageBox.Show("Xóa nhân viên thành công!!");
+                getData();
+            }
+            else
+            {
+                MessageBox.Show("Xóa nhân viên thất bại!!!");
+            }
+            
+            
+        }
+
+        private void btn_sua_Click(object sender, EventArgs e)
+        {
+            NHANVIEN nv = new NHANVIEN();
+            nv.MANV = int.Parse(txt_manv.Text);
+            nv.TENNV = txt_hoten.Text;
+            nv.DIACHI = txt_diachi.Text;
+            nv.SDT = txt_sdt.Text;
+            nv.CHUCVU = txt_chucvu.Text;
+            nv.NgayVaoLam = DateTime.Parse(txt_ngayvaolam.Text);
+            nv.TenDangNhap = txt_user.Text;
+
+            if (chk_nam.Checked == true)
+            {
+                nv.GIOITINH = "NAM";
+            }
+            else if (chk_nu.Checked == true)
+            {
+                nv.GIOITINH = "NỮ";
+            }
+            if (MessageBox.Show("Bạn có muốn cập nhật thông tin nhân viên này không???", "Cảnh báo",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                dal.updateNhanVien(nv);
+                MessageBox.Show("Cập nhật thông tin nhân viên thành công!!");
+                getData();
+            }
+            else
+            {
+                MessageBox.Show("Cập nhật thông tin nhân viên thất bại!!!");
+            }
+           
+            
         }
     }
 }

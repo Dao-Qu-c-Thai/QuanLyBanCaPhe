@@ -66,21 +66,23 @@ namespace DAL
     partial void InsertQL_NguoiDung(QL_NguoiDung instance);
     partial void UpdateQL_NguoiDung(QL_NguoiDung instance);
     partial void DeleteQL_NguoiDung(QL_NguoiDung instance);
+    partial void InsertQL_NguoiDungNhomNguoiDung(QL_NguoiDungNhomNguoiDung instance);
+    partial void UpdateQL_NguoiDungNhomNguoiDung(QL_NguoiDungNhomNguoiDung instance);
+    partial void DeleteQL_NguoiDungNhomNguoiDung(QL_NguoiDungNhomNguoiDung instance);
     partial void InsertQL_NhomNguoiDung(QL_NhomNguoiDung instance);
     partial void UpdateQL_NhomNguoiDung(QL_NhomNguoiDung instance);
     partial void DeleteQL_NhomNguoiDung(QL_NhomNguoiDung instance);
     partial void InsertQL_PhanQuyen(QL_PhanQuyen instance);
     partial void UpdateQL_PhanQuyen(QL_PhanQuyen instance);
     partial void DeleteQL_PhanQuyen(QL_PhanQuyen instance);
-    #endregion
-		
-		public QUANLYCAPHE1DataContext() : 
-				base(global::DAL.Properties.Settings.Default.QUANLYCAPHE1ConnectionString1, mappingSource)
-		{
-			OnCreated();
-		}
-		
-		public QUANLYCAPHE1DataContext(string connection) : 
+        #endregion
+
+        public QUANLYCAPHE1DataContext() :
+                base(global::DAL.Properties.Settings.Default.QUANLYCAPHE1ConnectionString, mappingSource)
+        {
+            OnCreated();
+        }
+        public QUANLYCAPHE1DataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -2410,8 +2412,10 @@ namespace DAL
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.QL_NguoiDungNhomNguoiDung")]
-	public partial class QL_NguoiDungNhomNguoiDung
+	public partial class QL_NguoiDungNhomNguoiDung : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _TenDangNhap;
 		
@@ -2419,11 +2423,24 @@ namespace DAL
 		
 		private string _GhiChu;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnTenDangNhapChanging(string value);
+    partial void OnTenDangNhapChanged();
+    partial void OnMaNhomNguoiDungChanging(string value);
+    partial void OnMaNhomNguoiDungChanged();
+    partial void OnGhiChuChanging(string value);
+    partial void OnGhiChuChanged();
+    #endregion
+		
 		public QL_NguoiDungNhomNguoiDung()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenDangNhap", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenDangNhap", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string TenDangNhap
 		{
 			get
@@ -2434,12 +2451,16 @@ namespace DAL
 			{
 				if ((this._TenDangNhap != value))
 				{
+					this.OnTenDangNhapChanging(value);
+					this.SendPropertyChanging();
 					this._TenDangNhap = value;
+					this.SendPropertyChanged("TenDangNhap");
+					this.OnTenDangNhapChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNhomNguoiDung", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaNhomNguoiDung", DbType="VarChar(20) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaNhomNguoiDung
 		{
 			get
@@ -2450,7 +2471,11 @@ namespace DAL
 			{
 				if ((this._MaNhomNguoiDung != value))
 				{
+					this.OnMaNhomNguoiDungChanging(value);
+					this.SendPropertyChanging();
 					this._MaNhomNguoiDung = value;
+					this.SendPropertyChanged("MaNhomNguoiDung");
+					this.OnMaNhomNguoiDungChanged();
 				}
 			}
 		}
@@ -2466,8 +2491,32 @@ namespace DAL
 			{
 				if ((this._GhiChu != value))
 				{
+					this.OnGhiChuChanging(value);
+					this.SendPropertyChanging();
 					this._GhiChu = value;
+					this.SendPropertyChanged("GhiChu");
+					this.OnGhiChuChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
