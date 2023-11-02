@@ -1,0 +1,10 @@
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\bin\Debug\DAL.dll.config
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\bin\Debug\DAL.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\bin\Debug\DAL.pdb
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\bin\Debug\DTO.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\bin\Debug\DTO.pdb
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\obj\Debug\DAL.dll
+D:\PhatTrienUngDungThongMinh\QuanLyBanCaPhe\DAL\obj\Debug\DAL.pdb
