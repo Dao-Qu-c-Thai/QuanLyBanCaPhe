@@ -34,8 +34,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL">
+      <HintPath>..\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="DTO">
+      <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,8 +55,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThuVienControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="ThuVienControls">
       <HintPath>..\ThuVienControls\bin\Debug\ThuVienControls.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -63,6 +72,30 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmManHinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManHinh.Designer.cs">
+      <DependentUpon>frmManHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNguoiDung.Designer.cs">
+      <DependentUpon>frmNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhomNguoiDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhomNguoiDung.Designer.cs">
+      <DependentUpon>frmNhomNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhanQuyen.Designer.cs">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +105,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QL_NguoiDung.cs" />
+    <Compile Include="frmThemNguoIDungVaoNhom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNguoIDungVaoNhom.Designer.cs">
+      <DependentUpon>frmThemNguoIDungVaoNhom.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_NhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -90,6 +129,18 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmManHinh.resx">
+      <DependentUpon>frmManHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNguoiDung.resx">
+      <DependentUpon>frmNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhomNguoiDung.resx">
+      <DependentUpon>frmNhomNguoiDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhanQuyen.resx">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +154,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="frmThemNguoIDungVaoNhom.resx">
+      <DependentUpon>frmThemNguoIDungVaoNhom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_NhanVien.resx">
       <DependentUpon>UC_NhanVien.cs</DependentUpon>
     </EmbeddedResource>
