@@ -52,21 +52,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_thoat = new System.Windows.Forms.Button();
-            this.btn_load = new System.Windows.Forms.Button();
-            this.btn_back = new System.Windows.Forms.Button();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.btn_search = new System.Windows.Forms.Button();
             this.txt_search = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.pan_tacvu = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.btn_luu = new System.Windows.Forms.Button();
-            this.btn_xoa = new System.Windows.Forms.Button();
-            this.btn_sua = new System.Windows.Forms.Button();
-            this.btn_them = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -83,6 +75,14 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lb_danhmuc = new System.Windows.Forms.Label();
+            this.btn_search = new System.Windows.Forms.Button();
+            this.btn_thoat = new System.Windows.Forms.Button();
+            this.btn_load = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
+            this.btn_luu = new System.Windows.Forms.Button();
+            this.btn_xoa = new System.Windows.Forms.Button();
+            this.btn_sua = new System.Windows.Forms.Button();
+            this.btn_them = new System.Windows.Forms.Button();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -345,34 +345,6 @@
             this.panel2.Size = new System.Drawing.Size(191, 85);
             this.panel2.TabIndex = 0;
             // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Image = global::QUanLyQuanCaPhe.Properties.Resources.x1;
-            this.btn_thoat.Location = new System.Drawing.Point(136, 21);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(52, 51);
-            this.btn_thoat.TabIndex = 60;
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            // 
-            // btn_load
-            // 
-            this.btn_load.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_load2;
-            this.btn_load.Location = new System.Drawing.Point(71, 21);
-            this.btn_load.Name = "btn_load";
-            this.btn_load.Size = new System.Drawing.Size(54, 51);
-            this.btn_load.TabIndex = 60;
-            this.btn_load.UseVisualStyleBackColor = true;
-            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
-            // 
-            // btn_back
-            // 
-            this.btn_back.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_back;
-            this.btn_back.Location = new System.Drawing.Point(7, 21);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(56, 51);
-            this.btn_back.TabIndex = 0;
-            this.btn_back.UseVisualStyleBackColor = true;
-            // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -382,16 +354,6 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(408, 71);
             this.panel17.TabIndex = 0;
-            // 
-            // btn_search
-            // 
-            this.btn_search.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_search1;
-            this.btn_search.Location = new System.Drawing.Point(344, 8);
-            this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(49, 50);
-            this.btn_search.TabIndex = 1;
-            this.btn_search.UseVisualStyleBackColor = true;
-            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // txt_search
             // 
@@ -453,57 +415,6 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(726, 71);
             this.panel20.TabIndex = 0;
-            // 
-            // btn_luu
-            // 
-            this.btn_luu.Image = global::QUanLyQuanCaPhe.Properties.Resources.luu;
-            this.btn_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_luu.Location = new System.Drawing.Point(533, 18);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(153, 40);
-            this.btn_luu.TabIndex = 1;
-            this.btn_luu.Text = "Tạo Password";
-            this.btn_luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_luu.UseVisualStyleBackColor = true;
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.Image = global::QUanLyQuanCaPhe.Properties.Resources.xoa;
-            this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_xoa.Location = new System.Drawing.Point(377, 18);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(124, 40);
-            this.btn_xoa.TabIndex = 1;
-            this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_xoa.UseVisualStyleBackColor = true;
-            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
-            // 
-            // btn_sua
-            // 
-            this.btn_sua.Image = global::QUanLyQuanCaPhe.Properties.Resources.sua;
-            this.btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_sua.Location = new System.Drawing.Point(209, 18);
-            this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(130, 40);
-            this.btn_sua.TabIndex = 1;
-            this.btn_sua.Text = "Sửa";
-            this.btn_sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_sua.UseVisualStyleBackColor = true;
-            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
-            // 
-            // btn_them
-            // 
-            this.btn_them.Image = global::QUanLyQuanCaPhe.Properties.Resources.them;
-            this.btn_them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_them.Location = new System.Drawing.Point(36, 18);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(140, 40);
-            this.btn_them.TabIndex = 1;
-            this.btn_them.Text = "Thêm";
-            this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_them.UseVisualStyleBackColor = true;
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // label14
             // 
@@ -656,6 +567,96 @@
             this.lb_danhmuc.Size = new System.Drawing.Size(116, 25);
             this.lb_danhmuc.TabIndex = 0;
             this.lb_danhmuc.Text = "Danh mục";
+            // 
+            // btn_search
+            // 
+            this.btn_search.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_search1;
+            this.btn_search.Location = new System.Drawing.Point(344, 8);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(49, 50);
+            this.btn_search.TabIndex = 1;
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // btn_thoat
+            // 
+            this.btn_thoat.Image = global::QUanLyQuanCaPhe.Properties.Resources.x1;
+            this.btn_thoat.Location = new System.Drawing.Point(136, 21);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(52, 51);
+            this.btn_thoat.TabIndex = 60;
+            this.btn_thoat.UseVisualStyleBackColor = true;
+            // 
+            // btn_load
+            // 
+            this.btn_load.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_load2;
+            this.btn_load.Location = new System.Drawing.Point(71, 21);
+            this.btn_load.Name = "btn_load";
+            this.btn_load.Size = new System.Drawing.Size(54, 51);
+            this.btn_load.TabIndex = 60;
+            this.btn_load.UseVisualStyleBackColor = true;
+            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Image = global::QUanLyQuanCaPhe.Properties.Resources.icon_back;
+            this.btn_back.Location = new System.Drawing.Point(7, 21);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(56, 51);
+            this.btn_back.TabIndex = 0;
+            this.btn_back.UseVisualStyleBackColor = true;
+            // 
+            // btn_luu
+            // 
+            this.btn_luu.Image = global::QUanLyQuanCaPhe.Properties.Resources.luu;
+            this.btn_luu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_luu.Location = new System.Drawing.Point(533, 18);
+            this.btn_luu.Name = "btn_luu";
+            this.btn_luu.Size = new System.Drawing.Size(153, 40);
+            this.btn_luu.TabIndex = 1;
+            this.btn_luu.Text = "Tạo Password";
+            this.btn_luu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_luu.UseVisualStyleBackColor = true;
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.Image = global::QUanLyQuanCaPhe.Properties.Resources.xoa;
+            this.btn_xoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_xoa.Location = new System.Drawing.Point(377, 18);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(124, 40);
+            this.btn_xoa.TabIndex = 1;
+            this.btn_xoa.Text = "Xóa";
+            this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            // 
+            // btn_sua
+            // 
+            this.btn_sua.Image = global::QUanLyQuanCaPhe.Properties.Resources.sua;
+            this.btn_sua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sua.Location = new System.Drawing.Point(209, 18);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(130, 40);
+            this.btn_sua.TabIndex = 1;
+            this.btn_sua.Text = "Sửa";
+            this.btn_sua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
+            // 
+            // btn_them
+            // 
+            this.btn_them.Image = global::QUanLyQuanCaPhe.Properties.Resources.them;
+            this.btn_them.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_them.Location = new System.Drawing.Point(36, 18);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(140, 40);
+            this.btn_them.TabIndex = 1;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // UC_NhanVien
             // 

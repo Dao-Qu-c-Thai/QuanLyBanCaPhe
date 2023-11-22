@@ -37,30 +37,41 @@ namespace QUanLyQuanCaPhe
             if(data_nhomnguoidung.Rows.Count >= -1) {
                 nh.MaNhom = data_nhomnguoidung.Rows[e.RowIndex].Cells[0].Value.ToString();
             }
-            //data_quyenchucnang.DataSource =  bll.getDataPhanQuyen(nh);
+            data_quyenchucnang.DataSource =  bll.getDataPhanQuyen(nh);
         }
 
         private void btn_luu_Click(object sender, EventArgs e)
         {
+            int dem = 0;
+            int sodong = data_quyenchucnang.RowCount;
             foreach(DataGridViewRow item in data_quyenchucnang.Rows)
             {
-                if(bll.KTKC_PhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString()) == false)
+                if(dem < sodong - 1)
                 {
-                    try
+                    if (bll.KTKC_PhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString()) == false)
                     {
-                        bll.insertPhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString(), (bool)item.Cells[2].Value);
+                        try
+                        {
+                            bll.insertPhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString(), (bool)item.Cells[2].Value);
+                        }
+                        catch
+                        {
+                            bll.insertPhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString(), false);
+                        }
                     }
-                    catch
+                    else
                     {
-                        bll.insertPhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString(), false);
+                        bll.updatePhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString(),
+                            (item.Cells[2] == null) ? false : (bool)(item.Cells[2].Value));
                     }
+                    dem++;
                 }
                 else
                 {
-                    bll.updatePhanQuyen(nh.MaNhom, item.Cells[0].Value.ToString(),
-                        (item.Cells[2] == null) ? false : (bool)(item.Cells[2].Value));
+                    return;
                 }
             }
+            MessageBox.Show("Phân quyền thành công");
         }
     }
 }

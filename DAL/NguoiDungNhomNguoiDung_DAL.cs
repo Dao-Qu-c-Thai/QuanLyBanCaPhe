@@ -17,6 +17,13 @@ namespace DAL
         {
             return da.GetDataByMaNhom(ng.MaNhom);
         }
+
+        public List<string> GetMaNhomND(string tenDN)
+        {
+            List<string> list = new List<string>();
+            list.Add(da.GetMaNhomND(tenDN));
+            return list;
+        }
         public bool themNguoiDungVaoNhom(NguoiDungNhomNguoiDung ng)
         {
             try

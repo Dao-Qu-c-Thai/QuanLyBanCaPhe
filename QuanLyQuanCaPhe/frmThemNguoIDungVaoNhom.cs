@@ -29,7 +29,7 @@ namespace QUanLyQuanCaPhe
         public void load_data()
         {
             cob_tennhom.DisplayMember = "TenNhom";
-            cob_tennhom.ValueMember = "MaNhom";
+            cob_tennhom.ValueMember = "MaNhomNguoiDung";
             cob_tennhom.DataSource = bll.getData();
             data_NguoiDung.DataSource = bll_NguoiDung.getNguoiDung();
         }

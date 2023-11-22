@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL;
+using DTO;
 
 namespace QUanLyQuanCaPhe
 {
     public partial class UC_NhanVien : UserControl
     {
+        //private NguoiDung nd;
         NhanVien_DAL dal = new NhanVien_DAL();
         public UC_NhanVien()
         {
@@ -160,6 +162,20 @@ namespace QUanLyQuanCaPhe
             }
            
             
+        }
+
+        private void btn_luu_Click(object sender, EventArgs e)
+        {
+            if (txt_user.Text.Trim() == "")
+            {
+                MessageBox.Show("Tên đăng nhập không được bỏ trống!!");
+            }
+            else
+            {
+                frmNguoiDung frm = new frmNguoiDung(txt_user.Text.ToString());
+                frm.ShowDialog();
+                
+            }
         }
     }
 }

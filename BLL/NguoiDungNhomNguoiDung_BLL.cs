@@ -17,6 +17,10 @@ namespace BLL
         {
             return dal.GetDataMaNhom(ng);
         }
+        public List<string> GetMaNhomND(string tenDN)
+        {
+            return dal.GetMaNhomND(tenDN);
+        }
         public bool themNguoiDungVaoNhom(NguoiDungNhomNguoiDung ng)
         {
             try

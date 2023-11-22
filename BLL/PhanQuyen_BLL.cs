@@ -12,14 +12,18 @@ namespace BLL
     public class PhanQuyen_BLL
     {
         PhanQuyen_DAL dal = new PhanQuyen_DAL();
-        public PhanQuyen_BLL() { }  
-        //public DataTable getDataPhanQuyen(NhomNguoiDung nh)
-        //{
-        //     return dal.getDataPhanQuyen(nh);
-        //}
+        public PhanQuyen_BLL() { }
+        public DataTable getDataPhanQuyen(NhomNguoiDung nh)
+        {
+            return dal.getDataPhanQuyen(nh);
+        }
         public DataTable getDataNhomNguoiDung()
         {
             return dal.getDataNhomNguoiDung();
+        }
+        public DataTable getMaMH(string maNhomND)
+        {
+            return dal.getMaMH(maNhomND);
         }
         public bool KTKC_PhanQuyen(string maNhom,string maMH)
         {

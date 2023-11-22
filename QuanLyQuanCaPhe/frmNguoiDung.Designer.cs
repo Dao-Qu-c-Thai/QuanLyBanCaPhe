@@ -152,6 +152,7 @@
             this.Controls.Add(this.data_NguoiDung);
             this.Name = "frmNguoiDung";
             this.Text = "frmNguoiDung";
+            this.Load += new System.EventHandler(this.frmNguoiDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_NguoiDung)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

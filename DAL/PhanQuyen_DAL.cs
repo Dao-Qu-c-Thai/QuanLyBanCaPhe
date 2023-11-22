@@ -14,15 +14,19 @@ namespace DAL
         GetPhanQuyenTableAdapter da = new GetPhanQuyenTableAdapter();
         QL_NhomNguoiDungTableAdapter da_nh = new QL_NhomNguoiDungTableAdapter();
         QL_PhanQuyenTableAdapter da_phanquyen = new QL_PhanQuyenTableAdapter();
-        QUANLYCAPHE1 data = new QUANLYCAPHE1();
+        QL_PhanQuyen1TableAdapter da_phanquyen1 = new QL_PhanQuyen1TableAdapter();
         public PhanQuyen_DAL() { }
-        //public DataTable getDataPhanQuyen(DataTable dataset, NhomNguoiDung nh)
-        //{
-        //   return da.Fill(dataset, nh.MaNhom);
-        //}
+        public DataTable getDataPhanQuyen(NhomNguoiDung nh)
+        {
+            return da.GetData(nh.MaNhom);
+        }
         public DataTable getDataNhomNguoiDung()
         {
             return da_nh.GetData();
+        }
+        public DataTable getMaMH(string maNhomND)
+        {
+            return da_phanquyen1.GetData(maNhomND);
         }
         public string KTKC_PhanQuyen(string maNhom,string maMH)
         {

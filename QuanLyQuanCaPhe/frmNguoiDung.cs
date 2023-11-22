@@ -15,7 +15,7 @@ namespace QUanLyQuanCaPhe
 {
     public partial class frmNguoiDung : Form
     {
-        
+        private string tenDN;
         NguoiDung_BLL bll = new NguoiDung_BLL();
 
         public frmNguoiDung()
@@ -23,6 +23,15 @@ namespace QUanLyQuanCaPhe
             InitializeComponent();
             this.CenterToParent();
             loadData();
+            
+        }
+        public frmNguoiDung(string tenDangNhap)
+        {
+            InitializeComponent();
+            this.CenterToParent();
+            loadData();
+            this.tenDN = tenDangNhap;
+
         }
 
         public void loadData()
@@ -105,6 +114,11 @@ namespace QUanLyQuanCaPhe
                 }
                 else { chk_hd.Checked = false; }
             }
+        }
+
+        private void frmNguoiDung_Load(object sender, EventArgs e)
+        {
+            txt_tenDangNhap.Text = tenDN;
         }
     }
 }

@@ -74,7 +74,7 @@ namespace QUanLyQuanCaPhe.GUI
             }
             if (Program.mainFrm == null || Program.mainFrm.IsDisposed)
             {
-                Program.mainFrm = new frmMain();
+                Program.mainFrm = new frmMain(txt_user.Text);
                 Program.mainFrm.IsMdiContainer = true;
             }
             this.Visible = false;
@@ -86,7 +86,7 @@ namespace QUanLyQuanCaPhe.GUI
             result = CauHinh.Check_User(txt_user.Text, txt_pass.Text);
             if (result == LoginResult.Invailid)
             {
-                MessageBox.Show("Sai" + label1.Text + " OR " + label2.Text);
+                MessageBox.Show("Sai " + label1.Text + " OR " + label2.Text);
                 return;
             }
             else if (result == LoginResult.Disabled)
