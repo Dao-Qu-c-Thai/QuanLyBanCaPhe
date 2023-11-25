@@ -82,33 +82,40 @@ namespace QUanLyQuanCaPhe
         private void btn_them_Click(object sender, EventArgs e)
         {
             NHANVIEN nv = new NHANVIEN();
-            nv.MANV = int.Parse(txt_manv.Text);
-            nv.TENNV=txt_hoten.Text;
-            nv.DIACHI=txt_diachi.Text;
-            nv.SDT=txt_sdt.Text;
-            nv.CHUCVU=txt_chucvu.Text;
-            nv.NgayVaoLam= DateTime.Parse(txt_ngayvaolam.Text);
-            nv.TenDangNhap = txt_user.Text;
+            if(txt_manv.Enabled || txt_hoten.Enabled || txt_hoten.Enabled || txt_diachi.Enabled || txt_sdt.Enabled ||
+                txt_chucvu.Enabled || txt_ngayvaolam.Enabled || txt_user.Enabled)
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!!!");
+            }
+            else
+            {
+                nv.MANV = int.Parse(txt_manv.Text);
+                nv.TENNV = txt_hoten.Text;
+                nv.DIACHI = txt_diachi.Text;
+                nv.SDT = txt_sdt.Text;
+                nv.CHUCVU = txt_chucvu.Text;
+                nv.NgayVaoLam = DateTime.Parse(txt_ngayvaolam.Text);
+                nv.TenDangNhap = txt_user.Text;
 
-            if (chk_nam.Checked == true)
-            {
-                nv.GIOITINH = "NAM";
+                if (chk_nam.Checked == true)
+                {
+                    nv.GIOITINH = "NAM";
+                }
+                else if (chk_nu.Checked == true)
+                {
+                    nv.GIOITINH = "NỮ";
+                }
+                try
+                {
+                    dal.themNhanVien(nv);
+                    MessageBox.Show("Thêm nhân viên thành công!!!");
+                    getData();
+                }
+                catch
+                {
+                    MessageBox.Show("Thêm nhân viên thất bại!!!");
+                }
             }
-            else if (chk_nu.Checked == true)
-            {
-                nv.GIOITINH = "NỮ";
-            }
-            try
-            {
-                dal.themNhanVien(nv);
-                MessageBox.Show("Thêm nhân viên thành công!!!");
-                getData();
-            }
-            catch
-            {
-                MessageBox.Show("Thêm nhân viên thất bại!!!");
-            }
-            
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)

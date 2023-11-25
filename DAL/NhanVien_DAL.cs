@@ -42,7 +42,7 @@ namespace DAL
                 NHANVIEN nhanvien = data.NHANVIENs.Where(n => n.MANV == nv.MANV).FirstOrDefault();
                 if (nhanvien != null)
                 {
-                    data.NHANVIENs.DeleteOnSubmit(nv);
+                    data.NHANVIENs.DeleteOnSubmit(nhanvien);
                     data.SubmitChanges();
                 }
                 return true;

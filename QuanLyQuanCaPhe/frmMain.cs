@@ -56,6 +56,10 @@ namespace QUanLyQuanCaPhe
                     FindMenuPhanQuyen(this.menuStrip1.Items, mh[0].ToString(), Convert.ToBoolean(mh[1].ToString()));
                 }
             }
+            UC_Order order = new UC_Order();
+            pal_main.Controls.Clear();
+            pal_main.Controls.Add(order);
+
         }
 
         private void FindMenuPhanQuyen(ToolStripItemCollection mnuItems, string pScreenName, bool pEnable)
