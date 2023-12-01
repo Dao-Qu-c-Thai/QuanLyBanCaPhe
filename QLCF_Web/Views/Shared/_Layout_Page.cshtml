@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+<style>
+    #oke {
+        font-size: 15px;
+        color: black;
+        padding-left: 20px;
+        font-family: Arial;
+    }
+
+        #oke:hover {
+            color: #704040;
+        }
+
+    #nav_menu {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 7000;
+        box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    }
+    .fa-shopping-cart {
+        color: #000;
+        opacity: 0.7;
+    }
+
+</style>
+
+<nav class="navbar navbar-expand-lg bg-light" id="nav_menu">
+    <div class="container-fluid">
+        <img src="../img/logo1.png" alt="img" style="width:150px;height:80px;margin-right:20px;">
+        <a class="navbar-brand m-2 " style="padding-left: 10px;" id="oke" aria-current="page" @Html.ActionLink("TRANG CHỦ", "Trangchu", "Product") </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" id="oke" aria-current="page" href="#">GIỚI THIỆU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active " id="oke" aria-current="page" @Html.ActionLink("SẢN PHẨM", "ShowProduct", "Product") </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" id="oke" aria-current="page" href="#">NHÀ CUNG CẤP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="oke" aria-current="page" href="#">LIÊN HỆ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="oke" [routerLink]="['login']">LOGIN </a>
+                </li>
+
+
+            </ul>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" style="border-radius:25px;" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit" style="border-radius: 25px;">
+                    <img src="../img/icons8-search-50.png" style="width: 20px; height: 20px; border-radius: 25px;">
+                </button>
+
+            </form>
+            <button class="btn " type="submit" style="border-radius: 25px;">
+                <div class="cart"><a><i class="fa fa-shopping-cart" aria-hidden="true">@Html.Action("BagCart","Cart")</i></a></div>
+            </button>
+        </div>
+    </div>
+</nav>
+<br />
+<br />
+@RenderBody()
+<div class="row" style="height: fit-content; background-color: #9C6060; color: #FFFFFF; ">
+    <div class="col" style="margin-bottom:20px;margin-left:20px;padding-bottom:20px;width:33%;">
+        <img src="../img/logo1.png" alt="Alternate Text" style="width:150px;height:100px;">
+        <br><br> Chào mừng đến với Quản Coffee của chúng tôi
+    </div>
+    <div class="col" style="margin-bottom: 20px; margin-left: 20px; padding-bottom: 20px; width: 33%;">
+        <br> <br><b>THÔNG TIN CẦN BIẾT</b> <br> <br>
+        Sản phẩm <br>
+        Tin tức <br>
+      
+
+    </div>
+    <div class="col">
+        <br> <br><b>CAM KẾT</b>  <br> <br>
+        - Giá ưu đãi nhất. <br>
+        - Sản phẩm chất lượng. <br>
+        - Truy xuất nguồn gốc rõ ràng. <br>
+       
+    </div>
+    <div class="col">
+        <br> <br><b>CHÍNH SÁCH &amp; BẢO MẬT</b> <br> <br>
+        Chính sách bảo mật <br>
+        Điều khoản sử dụng <br>
+        Hình thức thanh toán <br>
+  
+    </div>
+</div>
+
+
+

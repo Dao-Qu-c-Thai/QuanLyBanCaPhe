@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6c8af1bd3e4d44a581044903339965cf" Name="Diagram1">
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.C__EFMigrationsHistory" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.BAN" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.CHITIETHOADON" Width="1.5" PointX="7.5" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.DANGNHAP" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.HOADON" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.KHACHHANG" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.KHUVUC" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.LOAI_THUC_UONG" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.LOAIKH" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.NHANVIEN" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="QUANLYCAPHE1Model1.THUC_UONG" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_HD_BAN" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_KV_BAN1" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_HD_CTHD" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_THUC_UONG_CTHD" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_HD_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_HD_NV" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_LOAI_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="QUANLYCAPHE1Model1.FK_LOAI_THUC_UONG" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
